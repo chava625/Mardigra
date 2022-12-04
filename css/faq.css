@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.container-fluid{
+  width: 100%;
+}
+.container{
+  margin: 0 auto;
+}
+main h1{
+  color:#151515 ;
+  font-family: 'pattaya', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom:32px;
+}
+main hr{
+background-color: #8CBF3F;
+height: 2px;
+width: 70%;
+
+}
+main h2{
+color: #151511;
+font-family: 'Henny Penny', sans-serif;
+font-size: 3em;
+margin-top: 120px;
+margin-bottom: 40px;
+}
+main .card-header{
+padding: 20px;
+margin-top: 12px;
+background: linear-gradient(135deg, rgba(242,204,15,1) 0%, rgba(255,255,255,0.67) 82%, rgba(255,255,255,0.6) 100%);
+}
+main h3 span{
+color: #151511;
+font-size: 1.5em;
+}
+main h3 span:hover{
+color: #f2f2f2;
+text-decoration: none;
+cursor: pointer;
+text-shadow: 0 0 10px #151511;
+}
+
+
+
+
+@media screen and (max-width:992px){
+  main h1{
+    font-size: 2.2em;
+    margin:0;
+  }
+  main h2{
+    font-size: 1.8em;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+}
+@media screen and (max-width:768px){
+  main h1{
+    font-size: 2em;
+    margin:0;
+  }
+  main hr{
+    width:75%;
+  }
+  main h3 span{
+    font-size: 1em;
+    }
+}
+@media screen and (max-width:576px){
+  main h1{
+    font-size: 1.7em;
+    margin:0;
+  }
+  main hr{
+    height: 1px;
+    width: 80%;
+  }
+  main h3 span{
+    font-weight: normal;
+    }
+  main .card-header{
+    padding:4px;
+    }
+
+}

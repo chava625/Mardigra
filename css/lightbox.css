@@ -1,0 +1,34 @@
+.dark_window{
+  position:  absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.7);
+  /* רמת השכבה , ככל שגדול יותר
+  ככה השכבה יותר קדימה */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark_window .dark_box{
+  max-width: 600px;
+  width:100%;
+  min-height: 200px;
+  background: white;
+  border-radius: 16px;
+  position: relative;
+}
+
+.dark_window .dark_box button{
+  width:64px;
+  height:64px;
+  position: absolute;
+  top:8px;
+  right:8px;
+  font-size: 2em;
+  padding:8px;
+  border:0 solid black; 
+}

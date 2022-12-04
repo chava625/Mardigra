@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(45deg, rgba(140,191,63,1) 0%, rgba(242,204,15,1) 50%, rgba(242,242,242,1) 100%);
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding: 80px;
+}
+.container-fluid{
+  width: 100%;
+}
+main{
+  border: 12px solid #9453A6;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  text-align: center;
+  
+}
+main h1{
+font-family: 'henny penny';
+font-weight: 300;
+font-size: 3em;
+padding: 24px;
+}
+main hr{
+background-color: #9453A6;
+height: 2px;
+width: 70%;
+}
+main .imgs{
+margin-top: 32px;
+margin-bottom: 32px;
+display: grid;
+grid-template-columns: repeat(3 , 1fr);
+gap: 0.6em;
+
+}
+main p{
+font-size: 1.2em;
+columns: 3;
+text-align: justify;
+}
+main figure img{
+  -moz-box-shadow: 0px 0px 26px 6px rgba(161,158,161,1);
+  box-shadow: 0px 0px 26px 6px rgba(161,158,161,1);  
+}
+@media screen and (max-width:1200px){
+
+  main .imgs{
+  display: block;
+  }
+  main .imgs img{
+  width: 29%;
+  margin: 8px;
+  }
+}
+@media screen and (max-width:992px){
+  body{
+    padding: 32px;
+  }
+  main{
+    border: 8px solid #9453A6;
+    padding: 12px;
+  }
+  main h1{
+    font-size:2em;
+    padding: 16px 0;
+  }
+  main hr{
+    height: 1px;
+  }
+  main .imgs{
+    display: block;
+  }
+  main .imgs img{
+    width: 40%;
+    margin: 8px;
+  }
+  main p{
+    font-size: 1em;
+    columns: 2;
+  } 
+
+}
+ @media screen and (max-width:768px){
+                                                      
+main .imgs{
+  display: block;
+}
+main .imgs img{
+  width: 90%;
+  margin: 8px;
+}
+ main p{
+  font-size: 1em;
+  columns: 1;
+  padding: 8px;
+} 
+main figure img{
+  box-shadow: 0px 0px 0px 0px rgba(161,158,161,1);  
+}
+}

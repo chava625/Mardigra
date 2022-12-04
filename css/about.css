@@ -1,0 +1,93 @@
+
+main h1{
+  color:#151515 ;
+  font-family: 'pattaya', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  margin-top:60px;
+}
+main hr{
+background-color: #F2CC0F;
+height: 2px;
+width: 70%;
+}
+main .mayor{
+ margin:60px;
+ text-align: justify;
+}
+main .mayor img{
+  float: left;
+  margin:0 16px 16px 0;
+}
+
+main .mayor span{
+font-weight: bold;
+}
+main .article1 h2,main .article2 h2{
+  font-family: 'pattaya', sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+main .article1 .info,main .article2 .info{
+ margin:40px;
+ text-align: justify;
+}
+main .article1 .info img{
+  float: right;
+  margin:0 0 16px 16px;
+}
+main .article2 .info img{
+  float: left;
+  margin:0 16px 16px 0;
+}
+main .article2 .info .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .article2 .info button{
+  font-family: 'henny penny';
+  border: 4px solid #8CBF3F;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 12px 40px;
+  color: #8CBF3F;
+  background: white;
+  transition: 1s;
+}
+main .article2 .info button:hover{
+  border: 4px solid #9453A6;
+  color: #9453A6;
+  background: #f2f2f2;
+}
+
+@media screen and (max-width:768px){
+  main h1{
+    font-size: 2em;
+  }
+  main hr{
+  height: 1px;
+  }
+  main .mayor{
+   margin: 20px;
+   font-size: 0.9em;
+  }
+
+  main .article1 .h2,main .article2 .h2{
+    margin-top: 0;
+    }
+  main .article1 .info,main .article2 .info{
+    font-size: 0.9em;
+  }
+
+  main .article2 .info button{
+    border: 2px solid #8CBF3F;
+    padding: 8px 24px;
+    margin: 0;
+  }
+
+}
+
+
+
+

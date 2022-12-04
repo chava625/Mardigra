@@ -1,0 +1,156 @@
+
+
+main{
+  margin-bottom: 120px;
+  width: 90%;
+  }
+  main h1{
+    color:#f2f2f2 ;
+    font-family: 'pattaya', sans-serif;
+    font-size: 4.4em;
+    text-align: center;
+    margin:60px 0;
+    text-shadow:1px 1px 3px black, 0 0 25px grey, 0 0 5px #151515;
+  }
+  main hr{
+   height: 2px;
+   background: #8CBF3F;
+    }
+  main .hr2{
+   height: 2px;
+   background: #9453A6;
+    }
+  main .gallery{
+    border: 8px solid#f2f2f2;
+    padding: 12px;
+    margin-bottom: 48px;
+    width:100%;
+  }
+  main .gallery h2{
+    font-family: 'pattaya', sans-serif;
+    font-size: 3em;
+    text-align: center;
+  }
+  main .gallery .photo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  main .photo img{
+    width:15%;
+    margin: 4px;
+  }
+  main .photo img:hover{
+    box-shadow: 0px 0px 6px 2px rgb(199, 198, 199);  
+  }
+
+  main .video{
+    border: 8px solid#f2f2f2;
+    padding: 12px;
+    width:100%;
+    text-align: center;
+  }
+  main .video h2{
+    font-family: 'pattaya', sans-serif;
+    font-size: 3em;
+    text-align: center;
+  }
+  main .video iframe{
+    border: 12px solid #f2f2f2;
+    margin: 12px;
+  }
+
+  @media screen and (max-width:992px){
+
+      main h1{
+        color:#f2f2f2 ;
+        font-family: 'pattaya', sans-serif;
+        font-size: 3em;
+        margin:40px 0;
+      }
+      main hr{
+       height: 1px;
+        }
+      main .hr2{
+       height: 1px;
+        }
+      main .gallery{
+        padding: 8px;
+        margin-bottom: 40px;
+      }
+      main .gallery .photo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      main .photo img{
+        width:30%;
+        margin: 8px;
+      }
+
+      main .gallery h2{
+        font-size: 2em;
+      }
+      main .gallery .photo{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+  }
+  @media screen and (max-width:768px){
+
+      main h1{
+        color:#f2f2f2 ;
+        font-family: 'pattaya', sans-serif;
+        font-size: 2em;
+        margin:40px 0;
+      }
+
+      main .gallery{
+        padding: 8px;
+        margin-bottom: 32px;
+      }
+      
+      main .gallery h2{
+        font-size: 1.5em;
+      }
+      main .gallery .photo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      main .photo img{
+        width:46%;
+        margin: 8px;
+      }
+      main .photo img:hover{
+        box-shadow: 0px 0px 6px 2px rgb(199, 198, 199);  
+      }
+
+      main .video h2{
+        font-size: 1.5em;
+      }
+      main .video iframe{
+        border: 8px solid #f2f2f2;
+        margin: 8px;
+        width:90%;
+      }
+  }
+  @media screen and (max-width:576px){
+
+      main .gallery .photo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      main .photo img{
+        width:90%;
+        margin: 8px;
+      }
+
+  }
+
