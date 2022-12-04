@@ -1,0 +1,11 @@
+@mixin flexBet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin borderB($color){
+  border-bottom: 2px solid $color;
+}
+@mixin borderL($color){
+  border-left: 2px solid $color;
+}

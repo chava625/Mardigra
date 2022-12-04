@@ -1,0 +1,115 @@
+@import 'allscss';
+
+$greenColor:#8cbf3f;
+$purpleColor:#9453a6;
+$yellowColor:#f2cc0f;
+body {
+  background: #f2cc0f18;
+}
+main {
+    min-height: 400px;
+  h1 {
+    color: #151515;
+    font-family: "pattaya", sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  hr {
+    background-color: $greenColor;
+    height: 2px;
+    width: 70%;
+  }
+  form {
+    margin-top: 40px;
+    .formIn {
+      @include flexBet();
+    }
+    .div_input1,
+    .div_input2,
+    .div_input3 {
+      margin-bottom: 16px;
+      width: 32%;
+    }
+    .div_input1 input {
+      @include borderB($yellowColor);
+      @include borderL($purpleColor);
+      margin-right: 8px;
+    }
+    .div_input2 input {
+      @include borderB( $purpleColor);
+      @include borderL($greenColor);
+      margin-right: 8px;
+    }
+    .div_input3 input {
+      @include borderB($greenColor);
+      @include borderL($purpleColor);
+      border-left: 2px solid $yellowColor;
+    }
+    label{
+      color: $yellowColor;
+    }
+   
+
+    button {
+      height: 46px;
+      color: #151515;
+      background: white;
+      @include borderB($purpleColor);
+      border-top: 2px solid $greenColor;
+      border-right: 2px solid $yellowColor;
+      border-radius: 2%;
+      transition: 1s;
+      font-size: 0.9em;
+    }
+    button:hover {
+      color: $yellowColor;
+      @include borderB($yellowColor);
+      @include borderL($purpleColor);
+      border-top: 2px solid #8b8b8b;
+      border-right: 2px solid $greenColor;
+      font-size: 1.2em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    h1 {
+      font-size: 2.4em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    hr {
+      height: 1px;
+    }
+
+    form {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      .formIn {
+        display: block;
+      }
+      .div_input1,
+      .div_input2,
+      .div_input3 {
+        margin-bottom: 12px;
+        width: 100%;
+      }
+      .div_input1 input {
+        margin-right: 0;
+      }
+      .div_input2 input {
+        margin-right: 0;
+      }
+      button {
+        background: #1515151c;
+      }
+      button:hover {
+        color: $purpleColor;
+        background: #8cbf3f48;
+      }
+    }
+  }
+}
